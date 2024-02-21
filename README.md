@@ -20,7 +20,9 @@ file name (platform.txt) replace givan lines :
  compiler.ar.extra_flags=
  compiler.elf2hex.extra_flags=
  compiler.libraries.ldflags= )
+
 AND
+
 ( ## Combine gc-sections, archives, and objects
 recipe.c.combine.pattern="{compiler.path}{compiler.c.elf.cmd}" {build.exception_flags} -Wl,-Map "-Wl,{build.path}/{build.project_name}.map" {compiler.c.elf.flags} {compiler.c.elf.extra_flags} -o "{build.path}/{build.project_name}.elf" -Wl,--start-group {object_files} "{archive_file_path}" {compiler.c.elf.libs} {compiler.libraries.ldflags} -Wl,--end-group  "-L{build.path}" )
 
