@@ -1,15 +1,15 @@
-#define BLYNK_TEMPLATE_ID "TMPL37xdAyOJp"
-#define BLYNK_TEMPLATE_NAME "Rescue CM"
-#define BLYNK_AUTH_TOKEN "gTnuqIzMSb33OLMpf7jkFGUE0IcxkNAQ"
+#define BLYNK_TEMPLATE_ID "***********************"
+#define BLYNK_TEMPLATE_NAME "****************"         You should get the detail's in the Blynk App
+#define BLYNK_AUTH_TOKEN "***************"
  
 #include "bsec.h"
 #include <Blynk.h>
 #include <ESP8266WiFi.h>
 #include <BlynkSimpleEsp8266.h>
 
-char auth[] = "gTnuqIzMSb33OLMpf7jkFGUE0IcxkNAQ";    
-char ssid[] = "projectaqua";                         
-char pass[] = "abcd12345678";
+char auth[] = "***********************";    // You should get Auth Token in the Blynk App.
+char ssid[] = "***********************";                           // Your WiFi credentials.
+char pass[] = "***********************";
 
 // Helper functions declarations
 void checkIaqSensorStatus(void);
